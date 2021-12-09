@@ -1,0 +1,193 @@
+ 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario de compra </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="limiter">
+                <h3>Demostracion: Validacion de tarjeta</h3>
+                
+            </div>
+        </header>
+
+
+        <div class="creditCardForm">
+            <div class="heading">
+                <h1>Confirmar Tarjeta de credito</h1><br>
+
+                <h4>detalles de comprador<br></h4>
+             <form>
+                    <div class="form-group detalles">
+                        <label for="detalles">monto</label>
+                        <input type="text" class="form-control" id="monto">
+                        
+                    </div> 
+                    
+
+                    <div class="form-group articulo">
+                             <label for="articulo">articulos</label>
+                        <input type="text" class="form-control" id="articulo">
+                        
+                      
+                    </div>
+
+                      <div class="form-group correo">
+                             <label for="correo">correo</label>
+                        <input type="text" class="form-control" id="correo">
+                        
+                      
+                    </div>
+                    <div class="form-group pripietario">
+                        <label for="pripietario">Nombre de propietario</label>
+                        <input type="text" class="form-control" id="pripietario">
+                        
+                        
+                    </div>
+                      <div class="form-group apellid">
+                             <label for="apellido">apellido</label>
+                        <input type="text" class="form-control" id="apellido">
+                        
+                      
+                    </div>
+                     <div class="form-group telefono">
+                             <label for="telefono">telefono</label>
+                        <input type="text" class="form-control" id="telefono">
+                
+                    </div>
+                         </form>
+            </div> 
+
+            <div class="payment">
+                <form>
+                   
+                    <div class="form-group CVV">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv">
+
+                       
+                        
+                    </div>
+                    <div class="form-group" id="n_tarjetaField">
+                        <label for="n_tarjeta">numero tarjeta</label>
+                        <input type="text" class="form-control" id="n_tarjeta">
+                    </div>
+                    <div class="form-group" id="expiration-date">
+                        <label>Expiracion </label>
+                        <select id="mes" >
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero </option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Abril</option>
+                    <option value="05">mayo</option>
+                    <option value="06">Junio</option>
+                    <option value="07">Julio</option>
+                    <option value="08">Augosto</option>
+                    <option value="09">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Deciembre</option>
+                </select>
+                <select id="año">
+                    <option value="2020"> 2020</option>
+                    <option value="2021"> 2021</option>
+                    <option value="2022"> 2022</option>
+                    <option value="2023"> 2023</option>
+                    <option value="2024"> 2024</option>
+                    <option value="2025"> 2025</option>
+                </select>
+                    </div>
+
+
+                    <div class="form-group" id="credit_cards">
+                        <label>Elije la tarjeta </label>
+                         <select id="credit_cards1">
+
+                        <option value="Visa">Visa</option>
+                         <option value="Mastercar">Mastercar </option>
+                        <option value="Americaexpress">America express</option>
+                    
+                   </select>
+                   <div>
+                     <img src="assets/images/visa.jpg"  >
+                   <img src="assets/images/mastercard.jpg"  >
+                   <img src="assets/images/amex.jpg" >  
+                   </div>
+                   
+               </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div   onclick="enviardatos ()" class="form-group" id="pay-now">
+
+                        <button     class="btn btn-default" id="confirm-purchase">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <p class="examples-note">Aquí hay algunos números de tarjetas de crédito ficticios y códigos CVV para que pueda probar el formulario:</p>
+
+        <div class="examples">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Card Number</th>
+                            <th>Security Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visa</td>
+                            <td>4716108999716531</td>
+                            <td>257</td>
+                        </tr>
+                        <tr>
+                            <td>Master Card</td>
+                            <td>5281037048916168</td>
+                            <td>043</td>
+                        </tr>
+                        <tr>
+                            <td>American Express</td>
+                            <td>342498818630298</td>
+                            <td>3156</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js\tomardatos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.payform.min.js" charset="utf-8"></script>
+    <script src="assets/js/scrip2t.js"></script>
+
+</body>
+
+</html>

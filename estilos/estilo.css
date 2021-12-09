@@ -1,0 +1,112 @@
+ 
+ /* estilo pagina de inicio*/ 
+ header {
+  display: inline-block;
+  margin-left: 100px;
+ }
+
+
+ .registrar{
+      
+  background-color: green;
+  display: inline-block;
+  border-radius: 15px 15px 15px 15px;
+  width: 130px;
+  text-align: center;
+ 
+ }
+ 
+
+
+ .logo{
+   margin-left: 30px;
+  display: inline-block;
+  width: 250px;
+  height: 100px;  
+
+ }
+
+
+ 
+
+  .caja2 {
+    color:orange;
+     
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+   }
+
+
+
+  ul li {
+
+   display: inline-block;
+   margin-top: 5px;
+   margin-left: 20px;
+  } 
+
+
+  ul li a {
+
+    color: white;
+    font-size: 20px;
+   } 
+ 
+
+  
+  ul  {
+   padding-left: 440px;
+
+  }
+
+  
+  article {
+
+    padding-left: 340px;
+   } 
+
+   
+   article section div p {
+
+    padding-top: 30px;
+    font-size: 25px;
+    display: block;
+    
+    text-align: justify;
+    width: 800px;
+   } 
+
+   body{
+
+     background-color:#D4AC0D;
+
+   }
+
+   ul{
+    background-color: blue;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 50px;
+    margin-right: 40px;
+    height: 40px;
+
+   }
+
+
+
+
+/** Pantalla iniciar**/
+.pie{
+  display: inline-block;
+  width: 800px;
+  height: 50px;
+  margin-top: 200px;
+  margin-left: 340px;
+  border: black 3px solid;
+  text-align: center;
+  display:block;
+  
+ }
+
+    
+

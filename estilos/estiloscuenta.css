@@ -1,0 +1,13 @@
+.cuenta_lista{
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 550px;
+    width: 400px;
+    padding: 10px;
+     
+    height: 120px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+  }
